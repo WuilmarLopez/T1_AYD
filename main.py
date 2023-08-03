@@ -12,10 +12,10 @@ def index():
     return {"message": "Hello World"}
 
 
-#poniendo el metodo de suma
+#poniendo el metodo de multiplicacion
 @app.post("/post")
 def post(numero: numeros):
-    return {"suma": f"{numero.numero1 + numero.numero2}"}
+    return {"multiplicacion": f"{numero.numero1 * numero.numero2}"}
 
 #poniendo el metodo de info
 @app.get("/info")
